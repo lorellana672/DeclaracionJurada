@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     String json = gson.toJson(modelArrayList);
                     sharedPreferences.edit().putString("cosas", json).apply();
                     sharedPreferences1.edit().putBoolean("envio", true).apply();
+                    enviar.setVisibility(View.GONE);
                     FragmentManager fm = getSupportFragmentManager();
                     FragmentTransaction ft = fm.beginTransaction();
                     ft.add(R.id.frameId, new PagFragment());
