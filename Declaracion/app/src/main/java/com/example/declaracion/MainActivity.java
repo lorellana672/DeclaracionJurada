@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             tel = findViewById(R.id.tel);
             mail = findViewById(R.id.mail);
             enviar = findViewById(R.id.enviar);
+            enviar.setVisibility(View.GONE);
             sharedPreferences = getSharedPreferences("DATA", Context.MODE_PRIVATE);
             enviar.setOnClickListener(new View.OnClickListener() {
                 @Override
